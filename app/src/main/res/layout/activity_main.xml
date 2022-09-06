@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="Play Wheel"
+                android:text="Hier das Glücksrad drehen"
                 android:textColor="@color/white"/>
 
             <LinearLayout
@@ -149,7 +149,7 @@
                             android:id="@+id/txt_1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Roll Your Lucky Wheel..."
+                            android:text="Bitte drehen sie das Glücksrad"
                             android:textSize="20sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
@@ -194,7 +194,7 @@
                             android:id="@+id/txt_2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Roll Your Lucky Wheel..."
+                            android:text="Bitte drehen sie das Glücksrad"
                             android:textSize="20sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"
@@ -240,7 +240,7 @@
                             android:id="@+id/txt_3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Roll Your Lucky Wheel..."
+                            android:text="Bitte drehen sie das Glücksrad"
                             android:textSize="20sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/black"

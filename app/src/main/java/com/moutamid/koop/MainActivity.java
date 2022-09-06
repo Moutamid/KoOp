@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView wheel1;
     ImageView wheel2;
     ImageView wheel3;
+    //osama
     Button play_btn;
     TextView textview1;
     TextView textview2;
