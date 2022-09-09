@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
             i++;
         }while (res == null);
         textview3.setVisibility(View.GONE);
+        txt_3.setVisibility(View.VISIBLE);
         textview3.setText("Value form 3rd Wheel = "+res);
         if (res.equals("09")){
             txt_3.setText("Heute mache ich nach jeder Mahlzeit die liegende Acht und entspanne meine Augen\n" +
@@ -179,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
             i++;
         }while (res == null);
         textview2.setVisibility(View.GONE);
+        txt_2.setVisibility(View.VISIBLE);
         textview2.setText("Value form 2nd Wheel = "+res);
         if (res.equals("05")){
             txt_2.setText("Heute esse ich nur gesunde, natürliche Lebensmittel aus ökologischem Anbau");
@@ -240,6 +242,7 @@ public class MainActivity extends AppCompatActivity {
             i++;
         }while (res == null);
         textview1.setVisibility(View.GONE);
+        txt_1.setVisibility(View.VISIBLE);
         textview1.setText("Value form 1st Wheel = "+res);
         if (res.equals("01")){
             txt_1.setText("Heute mache ich alle 2 Stunden eine Pause von 20 Minuten an der frischen Luft");

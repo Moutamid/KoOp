@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_700"
-        app:title="KoOp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Gesundheitsoptometrie" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -151,7 +151,10 @@
                             android:layout_height="wrap_content"
                             android:text="Bitte drehen sie das Glücksrad"
                             android:textSize="20sp"
-                            android:layout_margin="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone"
                             android:textColor="@color/black"
                             android:textStyle="italic"/>
                     </LinearLayout>
@@ -196,8 +199,10 @@
                             android:layout_height="wrap_content"
                             android:text="Bitte drehen sie das Glücksrad"
                             android:textSize="20sp"
-                            android:layout_margin="10dp"
-                            android:textColor="@color/black"
+                            android:visibility="gone"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"                            android:textColor="@color/black"
                             android:textStyle="italic"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -242,7 +247,9 @@
                             android:layout_height="wrap_content"
                             android:text="Bitte drehen sie das Glücksrad"
                             android:textSize="20sp"
-                            android:layout_margin="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"                            android:visibility="gone"
                             android:textColor="@color/black"
                             android:textStyle="italic"/>
                     </LinearLayout>
