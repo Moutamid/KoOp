@@ -19,8 +19,11 @@ public class Starting_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_starting);
 
         homePage = findViewById(R.id.btn_homepage);
+        homePage.setAlpha(0f);
+        homePage.animate().alpha(1f).setDuration(3000);
         start = findViewById(R.id.btn_start);
-
+        start.setAlpha(0f);
+        start.animate().alpha(1f).setDuration(3000);
         textanim = findViewById(R.id.text_anim);
         textanim.setAlpha(0f);
         textanim.animate().alpha(1f).setDuration(3000);
