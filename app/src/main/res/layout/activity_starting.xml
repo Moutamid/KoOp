@@ -16,30 +16,36 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/logo_splash"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:src="@drawable/avatar" />
-
-            <TextView
-                android:id="@+id/text_anim"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Hallo und herzlich willkommen bei der ersten App für gesunde Augen. Ich freue mich das sie nun täglich hier vorbei kommen und sich die drei Vorschläge des Tages anschauen wollen. Wir glauben daran das sie es schaffen sich daran zu halten. Bei Fragen melden sie sich gerne über unsere Homepage bei mir. Ihr Gesundheitsoptometrist."
-                android:textColor="#595656"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
 
-            <ImageView
+                <ImageView
+                    android:id="@+id/logo_splash"
+                    android:layout_width="180dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/avatar" />
+
+                <TextView
+                    android:id="@+id/text_anim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="“ Hallo und herzlich willkommen bei der ersten App für gesunde Augen. Ich freue mich das sie nun täglich hier vorbei kommen und sich die drei Vorschläge des Tages anschauen wollen. Wir glauben daran das sie es schaffen sich daran zu halten. Bei Fragen melden sie sich gerne über unsere Homepage bei mir. Ihr Gesundheitsoptometrist. “ "
+                    android:textColor="#808080"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_above="@+id/layout_btns"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:src="@drawable/koop_text" />
+                android:layout_height="wrap_content"
+                android:text="Ihr Gesundheitsoptometrist"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="20sp"/>
 
             <LinearLayout
                 android:id="@+id/layout_btns"
@@ -51,7 +57,7 @@
                 <Button
                     android:id="@+id/btn_homepage"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:padding="15dp"
@@ -62,7 +68,7 @@
                 <Button
                     android:id="@+id/btn_start"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:elevation="5dp"
@@ -70,6 +76,16 @@
                     android:text="Start"
                     android:textSize="18sp" />
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_above="@+id/layout_btns"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/koop_text" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

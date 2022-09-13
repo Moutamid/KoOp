@@ -120,8 +120,7 @@ public class MainActivity extends AppCompatActivity {
         txt_3.setVisibility(View.VISIBLE);
         textview3.setText("Value form 3rd Wheel = "+res);
         if (res.equals("09")){
-            txt_3.setText("Heute mache ich nach jeder Mahlzeit die liegende Acht und entspanne meine Augen\n" +
-                    "danach für 5 Minuten");
+            txt_3.setText("Heute mache ich nach jeder Mahlzeit die liegende Acht und entspanne meine Augen danach für 5 Minuten");
         }
         else if (res.equals("10")){
             txt_3.setText("Heute lese ich immer in meiner persönlichen harmonischen Distanz");
