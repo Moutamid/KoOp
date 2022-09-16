@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="500dp"
-        android:layout_height="500dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo_splash_img" />
 
     <TextView
         android:layout_width="match_parent"

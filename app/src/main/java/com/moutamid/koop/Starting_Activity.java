@@ -24,9 +24,17 @@ public class Starting_Activity extends AppCompatActivity {
         start = findViewById(R.id.btn_start);
         start.setAlpha(0f);
         start.animate().alpha(1f).setDuration(3000);
-        textanim = findViewById(R.id.text_anim);
-        textanim.setAlpha(0f);
-        textanim.animate().alpha(1f).setDuration(3000);
+
+        final TypeWriterEffect tw = (TypeWriterEffect) findViewById(R.id.text_anim);
+        tw.setText("");
+        tw.setCharacterDelay(150);
+        tw.animateText(" “ Hallo und herzlich wilkommen bei der ersten deutschsprachigen APP für gesunde Augen.\n" +
+                "Ich freue mich das sie nun täglich hier vorbei schauen und sich die drei Vorschläge des Tages abholen wollen. Das Ziel ist es sich für diesen Tag an die Massnahmen zu halten.\n" +
+                "Ich glaube fest dran das sie es schaffen. Bei Fragen zu diesem Thema empfehle ich das Buch: Augenblickmal zu lesen.  “ ");
+
+        //textanim = findViewById(R.id.text_anim);
+        //textanim.setAlpha(0f);
+        //textanim.animate().alpha(1f).setDuration(3000);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
