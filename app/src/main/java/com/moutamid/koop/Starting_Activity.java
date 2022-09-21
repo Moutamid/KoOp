@@ -3,6 +3,7 @@ package com.moutamid.koop;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,8 @@ import android.widget.TextView;
 public class Starting_Activity extends AppCompatActivity {
 
     Button homePage , start;
-    TextView textanim;
+    MediaPlayer backgroundMusic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,10 @@ public class Starting_Activity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.button_sound);
+                backgroundMusic.setLooping(false);
+                backgroundMusic.setVolume(10.0f, 3.0f);
+                backgroundMusic.start();
                 Intent intent = new Intent(Starting_Activity.this , MainActivity.class);
                 startActivity(intent);
             }
@@ -47,6 +53,10 @@ public class Starting_Activity extends AppCompatActivity {
         homePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.button_sound);
+                backgroundMusic.setLooping(false);
+                backgroundMusic.setVolume(10.0f, 3.0f);
+                backgroundMusic.start();
                 String url = "https://op2metrie.blog/";
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(url));

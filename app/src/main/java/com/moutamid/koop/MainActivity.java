@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
 import android.graphics.BitmapFactory;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
     String[] sector2 = {"08" , "07" , "06" , "05"};
     String[] sector3 = {"12" , "11" , "10" , "09"};
 
+    MediaPlayer backgroundMusic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
         play_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                backgroundMusic = MediaPlayer.create(MainActivity.this, R.raw.button_sound);
+                backgroundMusic.setLooping(false);
+                backgroundMusic.setVolume(10.0f, 3.0f);
+                backgroundMusic.start();
+
                 rotate_wheel1();
                 rotate_wheel2();
                 rotate_wheel3();
