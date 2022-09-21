@@ -9,7 +9,7 @@ public class TypeWriterEffect extends androidx.appcompat.widget.AppCompatTextVie
 
     private CharSequence mText;
     private int mIndex;
-    private long mDelay = 150; // in ms
+    private long mDelay = 50; // in ms
 
     public TypeWriterEffect(Context context) {
         super(context);
