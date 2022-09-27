@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 6000;
+    private static int SPLASH_TIME_OUT = 3000;
     MediaPlayer backgroundMusic;
 
     @Override
@@ -28,7 +28,7 @@ public class Splash extends AppCompatActivity {
             }
         },SPLASH_TIME_OUT);
 
-        backgroundMusic = MediaPlayer.create(Splash.this, R.raw.splash_sound);
+        backgroundMusic = MediaPlayer.create(Splash.this, R.raw.splash);
         backgroundMusic.setLooping(false);
         backgroundMusic.setVolume(10.0f, 3.0f);
         backgroundMusic.start();

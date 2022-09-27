@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         play_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                backgroundMusic = MediaPlayer.create(MainActivity.this, R.raw.button_sound);
+                backgroundMusic = MediaPlayer.create(MainActivity.this, R.raw.start);
                 backgroundMusic.setLooping(false);
                 backgroundMusic.setVolume(10.0f, 3.0f);
                 backgroundMusic.start();

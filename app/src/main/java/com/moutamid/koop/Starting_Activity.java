@@ -27,13 +27,6 @@ public class Starting_Activity extends AppCompatActivity {
         start.setAlpha(0f);
         start.animate().alpha(1f).setDuration(1000);
 
-        final TypeWriterEffect tw = (TypeWriterEffect) findViewById(R.id.text_anim);
-        tw.setText("");
-        tw.setCharacterDelay(30);
-        tw.animateText(" “ Hallo und herzlich wilkommen bei der ersten deutschsprachigen APP für gesunde Augen.\n" +
-                "Ich freue mich das sie nun täglich hier vorbei schauen und sich die drei Vorschläge des Tages abholen wollen. Das Ziel ist es sich für diesen Tag an die Massnahmen zu halten.\n" +
-                "Ich glaube fest dran das sie es schaffen. Bei Fragen zu diesem Thema empfehle ich das Buch: Augenblick mal zu lesen.  “ ");
-
         //textanim = findViewById(R.id.text_anim);
         //textanim.setAlpha(0f);
         //textanim.animate().alpha(1f).setDuration(3000);
@@ -41,7 +34,7 @@ public class Starting_Activity extends AppCompatActivity {
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.button_sound);
+                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.home);
                 backgroundMusic.setLooping(false);
                 backgroundMusic.setVolume(10.0f, 3.0f);
                 backgroundMusic.start();
@@ -53,7 +46,7 @@ public class Starting_Activity extends AppCompatActivity {
         homePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.button_sound);
+                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.home);
                 backgroundMusic.setLooping(false);
                 backgroundMusic.setVolume(10.0f, 3.0f);
                 backgroundMusic.start();
@@ -63,5 +56,20 @@ public class Starting_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        final TypeWriterEffect tw = (TypeWriterEffect) findViewById(R.id.text_anim);
+        tw.setText("");
+        tw.setCharacterDelay(1);
+        tw.animateText(" “ Hallo und herzlich wilkommen bei der ersten deutschsprachigen APP für gesunde Augen.\n" +
+                "Ich freue mich das sie nun täglich hier vorbei schauen und sich die drei Vorschläge des Tages abholen wollen. Das Ziel ist es sich für diesen Tag an die Massnahmen zu halten.\n" +
+                "Ich glaube fest dran das sie es schaffen. Bei Fragen zu diesem Thema empfehle ich das Buch: Augenblick mal zu lesen.  “ ");
+        backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.typing);
+        backgroundMusic.setLooping(false);
+        backgroundMusic.setVolume(10.0f, 3.0f);
+        backgroundMusic.start();
+        super.onStart();
     }
 }
