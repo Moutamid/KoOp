@@ -70,6 +70,16 @@ public class Starting_Activity extends AppCompatActivity {
         backgroundMusic.setLooping(false);
         backgroundMusic.setVolume(10.0f, 3.0f);
         backgroundMusic.start();
+        backgroundMusic.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                backgroundMusic = MediaPlayer.create(Starting_Activity.this, R.raw.typing);
+                backgroundMusic.setLooping(false);
+                backgroundMusic.setVolume(10.0f, 3.0f);
+                backgroundMusic.start();
+            }
+        });
         super.onStart();
     }
+
 }
