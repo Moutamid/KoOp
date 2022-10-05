@@ -58,5 +58,11 @@
     "receiverUid": "receiver test uid",
     "senderUid": "sender test uid",
     "timestamp": 9999026225
+  },
+  "1663026225": {
+    "message": "This is test message",
+    "receiverUid": "receiver uid",
+    "senderUid": "sender uid",
+    "timestamp": 9999999999
   }
 }
